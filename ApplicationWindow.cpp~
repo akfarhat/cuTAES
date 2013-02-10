@@ -133,7 +133,7 @@ void ApplicationWindow::createNewAppForm2(Gtk::VBox& containerBox)
 {
   newAppLabel2.set_markup(
     "<span size='xx-large' font-weight='bold'> New Application </span>");
-  newAppLabel2.set_alignment(Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
+  newAppLabel2.set_alignment(Gtk::ALIGN_START, Gtk::ALIGN_START);
   containerBox.pack_start(newAppLabel2, false, false);
   newAppLabel2.show();
 
@@ -153,7 +153,7 @@ void ApplicationWindow::createNewAppForm2(Gtk::VBox& containerBox)
   labelBox.pack_start(selectedCourseLabel);
   containerBox.pack_start(labelBox);
 
-  generalInfoLabel.set_markup("<span size='x-large' underline='single'>General Information</span>");
+  generalInfoLabel.set_markup("<span size='large' underline='single'>General Information</span>");
   generalInfoLabel.set_padding(10,10);
   generalInfoLabel.set_alignment(Gtk::ALIGN_CENTER,Gtk::ALIGN_CENTER);
   containerBox.pack_start(generalInfoLabel);
